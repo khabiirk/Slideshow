@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+    .main {
+        margin: 100px;
+        border: solid white;
+    }
+    
+    .b {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+    }
+    
+    .d {
+        height: 5px;
+        width: 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 3px;
+    }
+    
+    .dot {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-left: 48%;
+    }
+    
+    .d:hover {
+        cursor: pointer;
+    }
+    
+    .slide {
+        height: 25px;
+        margin-top: 300px;
+    }
+    
+    .slide:hover {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <div class='b'>
+        <div id='left' class='slide'><i class='material-icons'>keyboard_arrow_left</i></div>
+        <div class='main'></div>
+        <div id="right" class='slide'><i class='material-icons'>keyboard_arrow_right</i></div>
+        <div class='dot'></div>
+
+    </div>
+</body>
+<script src='script.js'></script>
+
+
+
+</html>
